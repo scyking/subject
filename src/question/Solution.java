@@ -86,8 +86,7 @@ public class Solution {
 
     public TreeNode reConstructBinaryTree(int[] pre, int[] in) {
         int length = pre.length;
-        TreeNode root = reConstructBinaryTree(pre, 0, length - 1, in,
-                0, length - 1);
+        TreeNode root = reConstructBinaryTree(pre, 0, length - 1, in, 0, length - 1);
         return root;
     }
 
@@ -276,5 +275,103 @@ public class Solution {
         }
         return array[(flag + 1) % 2];
     }
+
+    //////////////////
+    ////////////////// 题目10
+    //////////////////
+
+    // 方法1：通过求模计算
+    public int NumberOf1_1(int n) {
+        int tmp = n;
+        int count = 0;
+        while (n != 0) {
+            if (n % 2 == 1 || n % 2 == -1) {
+                count++;
+            }
+            n = n / 2;
+        }
+        // 对于负数
+        if (tmp < 0) {
+            // 原码1的个数(个数+符号位)
+            // count + 1
+            // 反码1的个数(个数+符号位)
+            count = (31 - count) + 1;
+            // 补码1的个数
+            count = count - tmp % 2;
+            int max = 1 << 32 - 1;
+            // 进位溢出
+            if (tmp == max) {
+                count = 1;
+            }
+        }
+        return count;
+    }
+
+    // 方法2：通过右移计算
+    public int NumberOf1_2(int n) {
+        int count = 0;
+        int flag = 32;
+        while (flag > 0) {
+            // 判断最后一位是否为1
+            if ((n & 1) == 1) {
+                count++;
+            }
+            // 右移
+            n = n >> 1;
+            flag--;
+        }
+        return count;
+    }
+
+    // 方法3：通过'与'运算
+    public int NumberOf3(int n) {
+        int count = 0;
+        while (n != 0) {
+            // 去除尾1
+            n = n & (n - 1);
+            count++;
+        }
+        return count;
+    }
+
+
+    //////////////////
+    ////////////////// 题目11
+    //////////////////
+
+    // 方法1
+    public double Power(double base, int exponent) {
+        double result = 1;
+        if (exponent > 0) {
+            while (exponent > 0) {
+                result = result * base;
+                exponent--;
+            }
+        } else if (exponent < 0) {
+            while (exponent < 0) {
+                result = result / base;
+                exponent++;
+            }
+        }
+        return result;
+    }
+
+    // 方法2
+    public double Power2(double base, int exponent) {
+        double result = 1;
+        int tmp = exponent;
+        if (tmp < 0) {
+            exponent = -exponent;
+        }
+        while (exponent > 0) {
+            result = result * base;
+            exponent--;
+        }
+        if (tmp < 0) {
+            result = 1 / result;
+        }
+        return result;
+    }
+
 
 }
