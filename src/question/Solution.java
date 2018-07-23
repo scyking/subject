@@ -374,4 +374,168 @@ public class Solution {
     }
 
 
+    //////////////////
+    ////////////////// 题目12
+    //////////////////
+
+    public void reOrderArray(int[] array) {
+        int arrayLength = array.length;
+        for (int i = 0; i < arrayLength; i++) {
+            if (array[i] % 2 == 0) {
+                continue;
+            }
+            for (int j = i - 1; j >= 0; j--) {
+                if (array[j] % 2 == 0) {
+                    int tmp = array[j + 1];
+                    array[j + 1] = array[j];
+                    array[j] = tmp;
+                } else {
+                    break;
+                }
+            }
+
+        }
+    }
+
+    //////////////////
+    ////////////////// 题目13
+    //////////////////
+
+    public ListNode FindKthToTail(ListNode head, int k) {
+        ListNode targetNode = null;
+        if (head != null) {
+            targetNode = head;
+            int flag = 1;
+            while (head.next != null) {
+                if (flag == k) {
+                    targetNode = targetNode.next;
+                } else {
+                    flag++;
+                }
+                head = head.next;
+            }
+            if (flag != k) {
+                targetNode = null;
+            }
+        }
+        return targetNode;
+    }
+
+    //////////////////
+    ////////////////// 题目14
+    //////////////////
+
+    public ListNode ReverseList(ListNode head) {
+        ListNode lastNode = head;
+        if (head != null && head.next != null) {
+            lastNode = ReverseList(head, head.next);
+            head.next = null;
+        }
+        return lastNode;
+    }
+
+    public ListNode ReverseList(ListNode head, ListNode nextHead) {
+        ListNode lastNode;
+        if (nextHead.next != null) {
+            lastNode = ReverseList(nextHead, nextHead.next);
+            nextHead.next = head;
+        } else {
+            nextHead.next = head;
+            lastNode = nextHead;
+        }
+        return lastNode;
+    }
+
+    //////////////////
+    ////////////////// 题目15
+    //////////////////
+
+    public ListNode Merge(ListNode list1, ListNode list2) {
+        ListNode listNode = null;
+        if (list1 != null && list2 != null) {
+            if (list1.val < list2.val) {
+                listNode = list1;
+                list1 = list1.next;
+            } else {
+                listNode = list2;
+                list2 = list2.next;
+            }
+            ListNode lastNode = listNode;
+            while (lastNode.next != null) {
+                if (list1.val < list2.val) {
+                    lastNode.next = list1;
+                    list1 = list1.next;
+                } else {
+                    lastNode.next = list2;
+                    list2 = list2.next;
+                }
+                lastNode = lastNode.next;
+            }
+            if (list1 != null) {
+                lastNode.next = list1;
+            } else {
+                lastNode.next = list2;
+            }
+        } else {
+            listNode = list1 == null ? list2 : list1;
+        }
+        return listNode;
+    }
+
+    //////////////////
+    ////////////////// 题目16
+    //////////////////
+
+    public boolean HasSubtree(TreeNode root1, TreeNode root2) {
+        boolean flag = false;
+        if (root2 != null) {
+            flag = traSubtree(root1, root2);
+        }
+        return flag;
+    }
+
+    // 遍历root1，寻找比较点。
+    private boolean traSubtree(TreeNode root1, TreeNode root2) {
+        if (root1 != null) {
+            if (root1.val == root2.val) {
+                if (comSubtree(root1, root2)) {
+                    return true;
+                }
+            }
+            return traSubtree(root1.left, root2)
+                    || traSubtree(root1.right, root2);
+        } else {
+            return false;
+        }
+    }
+
+    // 比较二叉树，值是否完全一致（判断root1包含root2）。
+    private boolean comSubtree(TreeNode root1, TreeNode root2) {
+        if (root2 != null) {
+            if (root1 != null) {
+                if (root2.val == root1.val) {
+                    return comSubtree(root1.left, root2.left)
+                            && comSubtree(root1.right, root2.right);
+                }
+            }
+            return false;
+        }
+        return true;
+    }
+
+    //////////////////
+    ////////////////// 题目17
+    //////////////////
+
+    public void Mirror(TreeNode root) {
+        if (root != null) {
+            TreeNode tmp = root.left;
+            root.left = root.right;
+            root.right = tmp;
+            Mirror(root.left);
+            Mirror(root.right);
+        }
+    }
+
+
 }
