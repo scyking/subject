@@ -1,6 +1,6 @@
 # 编程题
 
-## [题目来源1](https://www.nowcoder.com/ta/coding-interviews)及[解决方法](https://github.com/scyking/subject/blob/master/src/question/Solution.java)
+## [题目来源1](https://www.nowcoder.com/ta/coding-interviews)及[解决方法](https://github.com/scyking/subject/blob/master/src/jzoffer/)
 
 > 没有特殊说明不考虑特殊输入，如非法值。
 
