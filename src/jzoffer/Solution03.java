@@ -5,7 +5,7 @@ import structure.TreeNode;
 /**
  * 重建二叉树
  */
-public class Solution3 {
+public class Solution03 {
 
     public TreeNode reConstructBinaryTree(int[] pre, int[] in) {
         int length = pre.length;

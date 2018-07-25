@@ -3,7 +3,7 @@ package jzoffer;
 /**
  * 二维数组中的查找
  */
-public class Solution1 {
+public class Solution01 {
 
     public boolean find(int target, int[][] array) {
         boolean flag = false;

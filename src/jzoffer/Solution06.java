@@ -3,7 +3,7 @@ package jzoffer;
 /**
  * 斐波那契数列
  */
-public class Solution6 {
+public class Solution06 {
 
     // 方法一：使用递归计算（耗时久）
     public int Fibonacci1(int n) {

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 /**
  * 从尾到头打印链表
  */
-public class Solution2 {
+public class Solution02 {
 
     public ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
         ArrayList<Integer> arrayList = new ArrayList<>();

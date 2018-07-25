@@ -3,7 +3,7 @@ package jzoffer;
 /**
  * 变态跳台阶
  */
-public class Solution8 {
+public class Solution08 {
 
     /**
      * f(n)=f(n-1)+f(n-2)+...+f(n-n);

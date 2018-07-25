@@ -1,22 +1,25 @@
 package jzoffer;
 
 /**
- * 跳台阶
+ * 矩形覆盖
  */
-public class Solution7 {
+public class Solution09 {
 
     /**
-     * 假设第一跳为1，剩下跳法为f(n-1)
+     * 假设第一个长条竖着放，剩下放法为f(n-1)
      * <p>
-     * 假设第一跳为2，剩下跳法为f(n-2)
+     * 假设第一个长条横着放，剩下放法为f(n-2)
      * <p>
-     * 总的跳法为f(n)=f(n-1)+f(n-2)，即属于斐波那契数列问题。
+     * 总的放法为f(n)=f(n-1)+f(n-2)，即属于斐波那契数列问题。
      *
      * @param target
      * @return
      */
-    public int JumpFloor(int target) {
+    public int RectCover(int target) {
         int n = target + 1;
+        if (n < 2) {
+            return 0;
+        }
         int[] array = {1, 1};
         int flag = 0;
         while (n > 2) {
@@ -26,5 +29,4 @@ public class Solution7 {
         }
         return array[(flag + 1) % 2];
     }
-
 }

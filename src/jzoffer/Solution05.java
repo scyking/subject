@@ -3,7 +3,7 @@ package jzoffer;
 /**
  * 旋转数组的最小数字
  */
-public class Solution5 {
+public class Solution05 {
 
     public int minNumberInRotateArray(int[] array) {
         int minValue = 0;
