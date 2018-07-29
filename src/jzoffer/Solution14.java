@@ -7,19 +7,19 @@ import structure.ListNode;
  */
 public class Solution14 {
 
-    public ListNode ReverseList(ListNode head) {
+    public ListNode reverseList(ListNode head) {
         ListNode lastNode = head;
         if (head != null && head.next != null) {
-            lastNode = ReverseList(head, head.next);
+            lastNode = reverseList(head, head.next);
             head.next = null;
         }
         return lastNode;
     }
 
-    private ListNode ReverseList(ListNode head, ListNode nextHead) {
+    private ListNode reverseList(ListNode head, ListNode nextHead) {
         ListNode lastNode;
         if (nextHead.next != null) {
-            lastNode = ReverseList(nextHead, nextHead.next);
+            lastNode = reverseList(nextHead, nextHead.next);
             nextHead.next = head;
         } else {
             nextHead.next = head;

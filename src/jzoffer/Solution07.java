@@ -15,7 +15,7 @@ public class Solution07 {
      * @param target
      * @return
      */
-    public int JumpFloor(int target) {
+    public int jumpFloor(int target) {
         int n = target + 1;
         int[] array = {1, 1};
         int flag = 0;

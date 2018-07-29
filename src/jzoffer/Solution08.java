@@ -15,20 +15,20 @@ public class Solution08 {
      * @param target
      * @return
      */
-    public int JumpFloorII1(int target) {
+    public int jumpFloorII1(int target) {
         if (target <= 1)
             return 1;
         if (target == 2)
             return 2;
         int sum = 0;
         for (int i = 0; i < target; i++) {
-            sum += JumpFloorII1(i);
+            sum += jumpFloorII1(i);
         }
         return sum;
     }
 
     // 对方法1进行归纳分析
-    public int JumpFloorII2(int target) {
+    public int jumpFloorII2(int target) {
         return 1 << (target - 1);
     }
 }

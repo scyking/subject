@@ -7,7 +7,7 @@ import structure.ListNode;
  */
 public class Solution13 {
 
-    public ListNode FindKthToTail(ListNode head, int k) {
+    public ListNode findKthToTail(ListNode head, int k) {
         ListNode targetNode = null;
         if (head != null) {
             targetNode = head;

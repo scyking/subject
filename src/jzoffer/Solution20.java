@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class Solution20 {
 
     // 模拟操作求解
-    public boolean IsPopOrder(int[] pushA, int[] popA) {
+    public boolean isPopOrder(int[] pushA, int[] popA) {
         boolean flag = true;
         int pushALength = pushA.length;
         ArrayList<Integer> list = new ArrayList<Integer>();

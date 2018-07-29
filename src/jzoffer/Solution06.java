@@ -6,17 +6,17 @@ package jzoffer;
 public class Solution06 {
 
     // 方法一：使用递归计算（耗时久）
-    public int Fibonacci1(int n) {
+    public int fibonacci1(int n) {
         if (n < 1) {
             return 0;
         } else if (n == 1) {
             return 1;
         }
-        return Fibonacci1(n - 1) + Fibonacci1(n - 2);
+        return fibonacci1(n - 1) + fibonacci1(n - 2);
     }
 
     // 方法2：使用循环计算
-    public int Fibonacci2(int n) {
+    public int fibonacci2(int n) {
         int[] array = {1, 1, 2};
         if (n < 1) {
             return 0;
@@ -33,7 +33,7 @@ public class Solution06 {
     }
 
     // 方法3：对方法2进行优化
-    public int Fibonacci3(int n) {
+    public int fibonacci3(int n) {
         if (n < 1) {
             return 0;
         }

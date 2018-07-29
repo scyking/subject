@@ -7,13 +7,13 @@ import structure.TreeNode;
  */
 public class Solution17 {
 
-    public void Mirror(TreeNode root) {
+    public void mirror(TreeNode root) {
         if (root != null) {
             TreeNode tmp = root.left;
             root.left = root.right;
             root.right = tmp;
-            Mirror(root.left);
-            Mirror(root.right);
+            mirror(root.left);
+            mirror(root.right);
         }
     }
 }

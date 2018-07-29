@@ -7,7 +7,7 @@ import structure.TreeNode;
  */
 public class Solution16 {
 
-    public boolean HasSubtree(TreeNode root1, TreeNode root2) {
+    public boolean hasSubtree(TreeNode root1, TreeNode root2) {
         boolean flag = false;
         if (root2 != null) {
             flag = traSubtree(root1, root2);

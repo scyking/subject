@@ -6,7 +6,7 @@ package jzoffer;
 public class Solution11 {
 
     // 方法1
-    public double Power(double base, int exponent) {
+    public double power(double base, int exponent) {
         double result = 1;
         if (exponent > 0) {
             while (exponent > 0) {
@@ -23,7 +23,7 @@ public class Solution11 {
     }
 
     // 方法2
-    public double Power2(double base, int exponent) {
+    public double power2(double base, int exponent) {
         double result = 1;
         int tmp = exponent;
         if (tmp < 0) {

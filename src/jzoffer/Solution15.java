@@ -7,7 +7,7 @@ import structure.ListNode;
  */
 public class Solution15 {
 
-    public ListNode Merge(ListNode list1, ListNode list2) {
+    public ListNode merge(ListNode list1, ListNode list2) {
         ListNode listNode = null;
         if (list1 != null && list2 != null) {
             if (list1.val < list2.val) {

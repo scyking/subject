@@ -15,7 +15,7 @@ public class Solution09 {
      * @param target
      * @return
      */
-    public int RectCover(int target) {
+    public int rectCover(int target) {
         int n = target + 1;
         if (n < 2) {
             return 0;

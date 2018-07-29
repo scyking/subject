@@ -6,7 +6,7 @@ package jzoffer;
 public class Solution10 {
 
     // 方法1：通过求模计算
-    public int NumberOf1_1(int n) {
+    public int numberOf1_1(int n) {
         int tmp = n;
         int count = 0;
         while (n != 0) {
@@ -33,7 +33,7 @@ public class Solution10 {
     }
 
     // 方法2：通过右移计算
-    public int NumberOf1_2(int n) {
+    public int numberOf1_2(int n) {
         int count = 0;
         int flag = 32;
         while (flag > 0) {
@@ -49,7 +49,7 @@ public class Solution10 {
     }
 
     // 方法3：通过'与'运算
-    public int NumberOf3(int n) {
+    public int numberOf3(int n) {
         int count = 0;
         while (n != 0) {
             // 去除尾1
