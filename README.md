@@ -1,4 +1,20 @@
-## 编程题
+# 项目说明
+
+---
+
+[toc]
+
+## 导入方法（IDEA）
+1. 依次点击`File` -> `New` -> `Project from Version Control` -> `Git`
+1. 输入`https://github.com/scyking/subject.git`，点击`clone`
+1. 依次点击`File` -> `Project Structure`
+1. 在`Project`中设置jdk、out路径
+1. 在`Modules`中设置`src/main/java`为`Sources`
+1. 在`Modules`中设置`src/test/java`为`Tests`
+
+## 项目目录结构
+
+## 编程题目录
 
 ### [题目来源1](https://www.nowcoder.com/ta/coding-interviews)及[解决方法](https://github.com/scyking/subject/blob/master/src/jzoffer/)
 
