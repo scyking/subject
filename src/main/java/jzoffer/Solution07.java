@@ -1,4 +1,4 @@
-package main.java.jzoffer;
+package jzoffer;
 
 /**
  * 跳台阶

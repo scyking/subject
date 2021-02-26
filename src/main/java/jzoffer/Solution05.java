@@ -1,4 +1,4 @@
-package main.java.jzoffer;
+package jzoffer;
 
 /**
  * 旋转数组的最小数字

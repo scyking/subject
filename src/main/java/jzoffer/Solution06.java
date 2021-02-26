@@ -1,4 +1,4 @@
-package main.java.jzoffer;
+package jzoffer;
 
 /**
  * 斐波那契数列

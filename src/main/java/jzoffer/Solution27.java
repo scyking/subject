@@ -1,5 +1,4 @@
-package main.java.jzoffer;
-
+package jzoffer;
 public class Solution27 {
 
     // 数组中出现次数超过一半的数字

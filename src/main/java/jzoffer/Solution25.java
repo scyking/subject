@@ -1,5 +1,4 @@
-package main.java.jzoffer;
-
+package jzoffer;
 import main.java.structure.TreeNode;
 
 public class Solution25 {

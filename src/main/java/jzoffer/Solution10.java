@@ -1,5 +1,4 @@
-package main.java.jzoffer;
-
+package jzoffer;
 /**
  * 二进制中1的个数
  */

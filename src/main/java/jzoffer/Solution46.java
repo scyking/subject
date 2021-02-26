@@ -1,5 +1,4 @@
-package main.java.jzoffer;
-
+package jzoffer;
 public class Solution46 {
 
     // 方法1：利用公式

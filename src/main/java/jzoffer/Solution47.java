@@ -1,5 +1,4 @@
-package main.java.jzoffer;
-
+package jzoffer;
 public class Solution47 {
 
     // 方法1

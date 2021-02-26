@@ -1,5 +1,4 @@
-package main.java.jzoffer;
-
+package jzoffer;
 import java.util.Stack;
 
 /**

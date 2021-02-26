@@ -1,5 +1,4 @@
-package main.java.jzoffer;
-
+package jzoffer;
 public class Solution22 {
 
     public boolean verifySquenceOfBST(int[] sequence) {

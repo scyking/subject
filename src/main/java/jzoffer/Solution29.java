@@ -1,5 +1,4 @@
-package main.java.jzoffer;
-
+package jzoffer;
 public class Solution29 {
 
     // 连续子数组的最大和

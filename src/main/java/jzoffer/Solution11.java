@@ -1,5 +1,4 @@
-package main.java.jzoffer;
-
+package jzoffer;
 /**
  * 数值的整数次方
  */
