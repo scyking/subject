@@ -1,5 +1,7 @@
 package jzoffer;
 
+import java.lang.reflect.Proxy;
+
 /**
  * 二维数组中的查找
  *
@@ -9,15 +11,15 @@ package jzoffer;
  *
  * @author scyking
  */
-public class Solution01 {
+public class Solution01 implements Solution {
 
-    public boolean find(int target, int[][] array) {
+    private boolean find(int target, int[][] array) {
         boolean flag = false;
         LOOP:
-        for (int[] arrayone : array) {
-            int arrayLength = arrayone.length;
+        for (int[] arrayOne : array) {
+            int arrayLength = arrayOne.length;
             for (int i = 0; i < arrayLength; i++) {
-                if (arrayone[i] > target) {
+                if (arrayOne[i] > target) {
                     if (i > 0) {
                         // 跳出本次循环
                         break;
@@ -25,7 +27,7 @@ public class Solution01 {
                         // 跳出嵌套查询
                         break LOOP;
                     }
-                } else if (arrayone[i] == target) {
+                } else if (arrayOne[i] == target) {
                     flag = true;
                     // 跳出嵌套查询
                     break LOOP;
@@ -34,4 +36,26 @@ public class Solution01 {
         }
         return flag;
     }
+
+    @Override
+    public Object execute() {
+        int target = 7;
+        int[][] array = {
+                {1, 2, 8, 9},
+                {2, 4, 9, 12},
+                {4, 7, 10, 13},
+                {6, 8, 11, 15}};
+
+        return find(target, array);
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution01();
+        Solution solutionProxy = (Solution) Proxy.newProxyInstance(
+                solution.getClass().getClassLoader(),
+                solution.getClass().getInterfaces(),
+                new SolutionProxy(solution));
+        solutionProxy.execute();
+    }
+
 }
