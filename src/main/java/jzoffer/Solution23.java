@@ -10,8 +10,8 @@ public class Solution23 {
         ArrayList<ArrayList<Integer>> resultList = new ArrayList<ArrayList<Integer>>();
         if (root != null) {
             ArrayList<Integer> tmpList = new ArrayList<Integer>();
-            tmpList.add(root.val);
-            findPath(tmpList, root.val, target, root, resultList);
+            tmpList.add(root.getVal());
+            findPath(tmpList, root.getVal(), target, root, resultList);
         }
         return resultList;
     }
@@ -20,20 +20,20 @@ public class Solution23 {
                           int target, TreeNode treeNode,
                           ArrayList<ArrayList<Integer>> resultList) {
         if (totalValue < target) {
-            if (treeNode.left != null) {
-                tmpList.add(treeNode.left.val);
-                findPath(tmpList, totalValue + treeNode.left.val, target,
-                        treeNode.left, resultList);
+            if (treeNode.getLeft() != null) {
+                tmpList.add(treeNode.getLeft().getVal());
+                findPath(tmpList, totalValue + treeNode.getLeft().getVal(), target,
+                        treeNode.getLeft(), resultList);
                 tmpList.remove(tmpList.size() - 1);
             }
-            if (treeNode.right != null) {
-                tmpList.add(treeNode.right.val);
-                findPath(tmpList, totalValue + treeNode.right.val, target,
-                        treeNode.right, resultList);
+            if (treeNode.getRight() != null) {
+                tmpList.add(treeNode.getRight().getVal());
+                findPath(tmpList, totalValue + treeNode.getRight().getVal(), target,
+                        treeNode.getRight(), resultList);
                 tmpList.remove(tmpList.size() - 1);
             }
-        } else if (totalValue == target && treeNode.left == null
-                && treeNode.right == null) {
+        } else if (totalValue == target && treeNode.getLeft() == null
+                && treeNode.getRight() == null) {
             ArrayList<Integer> result = new ArrayList<Integer>(tmpList);
             resultList.add(result);
         }

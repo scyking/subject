@@ -9,11 +9,11 @@ public class Solution17 {
 
     public void mirror(TreeNode root) {
         if (root != null) {
-            TreeNode tmp = root.left;
-            root.left = root.right;
-            root.right = tmp;
-            mirror(root.left);
-            mirror(root.right);
+            TreeNode tmp = root.getLeft();
+            root.setLeft(root.getRight());
+            root.setRight(tmp);
+            mirror(root.getLeft());
+            mirror(root.getRight());
         }
     }
 }

@@ -24,7 +24,7 @@ public class Solution02 implements Solution {
                 // 递归添加尾节点
                 addListNodeTailToHead(node.getNext(), list);
             }
-            list.add(Integer.valueOf(node.getVal()));
+            list.add(node.getVal());
         }
         return list;
     }

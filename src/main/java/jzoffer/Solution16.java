@@ -18,13 +18,13 @@ public class Solution16 {
     // 遍历root1，寻找比较点。
     private boolean traSubtree(TreeNode root1, TreeNode root2) {
         if (root1 != null) {
-            if (root1.val == root2.val) {
+            if (root1.getVal() == root2.getVal()) {
                 if (comSubtree(root1, root2)) {
                     return true;
                 }
             }
-            return traSubtree(root1.left, root2)
-                    || traSubtree(root1.right, root2);
+            return traSubtree(root1.getLeft(), root2)
+                    || traSubtree(root1.getLeft(), root2);
         } else {
             return false;
         }
@@ -34,9 +34,9 @@ public class Solution16 {
     private boolean comSubtree(TreeNode root1, TreeNode root2) {
         if (root2 != null) {
             if (root1 != null) {
-                if (root2.val == root1.val) {
-                    return comSubtree(root1.left, root2.left)
-                            && comSubtree(root1.right, root2.right);
+                if (root2.getVal() == root1.getVal()) {
+                    return comSubtree(root1.getLeft(), root2.getLeft())
+                            && comSubtree(root1.getRight(), root2.getRight());
                 }
             }
             return false;

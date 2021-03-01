@@ -14,13 +14,13 @@ public class Solution21 {
             listTmp.add(root);
             while (!listTmp.isEmpty()) {
                 TreeNode firstTreeNode = listTmp.get(0);
-                listResult.add(firstTreeNode.val);
+                listResult.add(firstTreeNode.getVal());
                 listTmp.remove(0);
-                if (firstTreeNode.left != null) {
-                    listTmp.add(firstTreeNode.left);
+                if (firstTreeNode.getLeft() != null) {
+                    listTmp.add(firstTreeNode.getLeft());
                 }
-                if (firstTreeNode.right != null) {
-                    listTmp.add(firstTreeNode.right);
+                if (firstTreeNode.getRight() != null) {
+                    listTmp.add(firstTreeNode.getRight());
                 }
             }
         }
