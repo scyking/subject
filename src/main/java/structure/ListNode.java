@@ -1,4 +1,4 @@
-package main.java.structure;
+package structure;
 
 /**
  * 链表数据结构

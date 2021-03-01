@@ -1,4 +1,4 @@
-package main.java.structure;
+package structure;
 
 /**
  * 二叉树数据结构
