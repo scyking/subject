@@ -50,7 +50,7 @@ public class Solution01 implements Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution01();
+        Solution01 solution = new Solution01();
         Solution solutionProxy = (Solution) Proxy.newProxyInstance(
                 solution.getClass().getClassLoader(),
                 solution.getClass().getInterfaces(),

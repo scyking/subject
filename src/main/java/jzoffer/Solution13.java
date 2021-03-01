@@ -1,5 +1,6 @@
 package jzoffer;
-import main.java.structure.ListNode;
+
+import structure.ListNode;
 
 /**
  * 链表中倒数第k个结点
@@ -11,13 +12,13 @@ public class Solution13 {
         if (head != null) {
             targetNode = head;
             int flag = 1;
-            while (head.next != null) {
+            while (head.getNext() != null) {
                 if (flag == k) {
-                    targetNode = targetNode.next;
+                    targetNode = targetNode.getNext();
                 } else {
                     flag++;
                 }
-                head = head.next;
+                head = head.getNext();
             }
             if (flag != k) {
                 targetNode = null;

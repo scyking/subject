@@ -1,5 +1,6 @@
 package jzoffer;
-import main.java.structure.TreeNode;
+
+import structure.TreeNode;
 
 import java.util.ArrayList;
 

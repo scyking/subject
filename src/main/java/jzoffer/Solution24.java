@@ -1,5 +1,6 @@
 package jzoffer;
-import main.java.structure.RandomListNode;
+
+import structure.RandomListNode;
 
 import java.util.ArrayList;
 import java.util.List;
