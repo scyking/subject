@@ -4,6 +4,9 @@ import structure.TreeNode;
 
 /**
  * 二叉树的镜像
+ * <p>
+ *         操作给定的二叉树，将其变换为源二叉树的镜像(所有结点的左右子结点互调位置)。
+ * </p>
  */
 public class Solution17 {
 

@@ -5,6 +5,12 @@ import structure.TreeNode;
 
 import java.util.ArrayList;
 
+/**
+ * 从上往下打印二叉树
+ * <p>
+ *         从上往下打印出二叉树的每个节点，同层节点从左至右打印。
+ * </p>
+ */
 public class Solution21 {
 
     public ArrayList<Integer> printFromTopToBottom(TreeNode root) {
