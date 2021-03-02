@@ -20,35 +20,35 @@
 
 > 没有特殊说明不考虑特殊输入，如非法值。
 
-1. [二维数组中的查找](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution01.java)
-1. [从尾到头打印链表](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution02.java)
-1. [重建二叉树](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution03.java)
-1. [用两个栈实现队列](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution04.java)
-1. [旋转数组的最小数字](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution05.java)
-1. [斐波那契数列](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution06.java)
-1. [跳台阶](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution07.java)
-1. [变态跳台阶](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution08.java)
-1. [矩形覆盖](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution09.java)
-1. [二进制中1的个数](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution10.java)
-1. [数值的整数次方](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution11.java)
-1. [调整数组顺序使奇数位于偶数前面](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution12.java)
-1. [链表中倒数第k个结点](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution13.java)
-1. [反转链表](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution14.java)
-1. [合并两个排序的链表](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution15.java)
-1. [树的子结构](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution16.java)
-1. [二叉树的镜像](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution17.java)
-1. [顺时针打印矩阵](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution18.java)
-1. [包含min函数的栈](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution19.java)
-1. [栈的压入、弹出序列](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution20.java)
-1. [从上往下打印二叉树](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution21.java)
-1. [二叉搜索树的后序遍历序列](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution22.java)
-1. [二叉树中和为某一值的路径](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution23.java)
-1. [复杂链表的复制](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution24.java)
-1. [二叉搜索树与双向链表](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution25.java)
-1. [字符串的排列](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution26.java)
-1. [数组中出现次数超过一半的数字](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution27.java)
-1. [最小的K个数](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution28.java)
-1. [连续子数组的最大和](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution29.java)
+1. [二维数组中的查找](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution01.java)
+1. [从尾到头打印链表](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution02.java)
+1. [重建二叉树](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution03.java)
+1. [用两个栈实现队列](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution04.java)
+1. [旋转数组的最小数字](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution05.java)
+1. [斐波那契数列](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution06.java)
+1. [跳台阶](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution07.java)
+1. [变态跳台阶](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution08.java)
+1. [矩形覆盖](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution09.java)
+1. [二进制中1的个数](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution10.java)
+1. [数值的整数次方](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution11.java)
+1. [调整数组顺序使奇数位于偶数前面](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution12.java)
+1. [链表中倒数第k个结点](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution13.java)
+1. [反转链表](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution14.java)
+1. [合并两个排序的链表](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution15.java)
+1. [树的子结构](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution16.java)
+1. [二叉树的镜像](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution17.java)
+1. [顺时针打印矩阵](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution18.java)
+1. [包含min函数的栈](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution19.java)
+1. [栈的压入、弹出序列](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution20.java)
+1. [从上往下打印二叉树](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution21.java)
+1. [二叉搜索树的后序遍历序列](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution22.java)
+1. [二叉树中和为某一值的路径](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution23.java)
+1. [复杂链表的复制](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution24.java)
+1. [二叉搜索树与双向链表](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution25.java)
+1. [字符串的排列](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution26.java)
+1. [数组中出现次数超过一半的数字](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution27.java)
+1. [最小的K个数](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution28.java)
+1. [连续子数组的最大和](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution29.java)
 1. 整数中1出现的次数（从1到n整数中1出现的次数）
 
     求出`1~13`的整数中1出现的次数,并算出`100~1300`的整数中1出现的次数？为此他特别数了一下`1~13`中包含1的数字有1、10、11、12、13因此共出现6次,但是对于后面问题他就没辙了。ACMer希望你们帮帮他,并把问题更加普遍化,可以很快的求出任意非负整数区间中1出现的次数（从1 到 n 中1出现的次数）。
@@ -131,11 +131,11 @@
 
     每年六一儿童节,牛客都会准备一些小礼物去看望孤儿院的小朋友,今年亦是如此。HF作为牛客的资深元老,自然也准备了一些小游戏。其中,有个游戏是这样的:首先,让小朋友们围成一个大圈。然后,他随机指定一个数m,让编号为0的小朋友开始报数。每次喊到m-1的那个小朋友要出列唱首歌,然后可以在礼品箱中任意的挑选礼物,并且不再回到圈中,从他的下一个小朋友开始,继续0...m-1报数....这样下去....直到剩下最后一个小朋友,可以不用表演,并且拿到牛客名贵的“名侦探柯南”典藏版(名额有限哦!!^_^)。请你试着想下,哪个小朋友会得到这份礼品呢？(注：小朋友的编号是从0到n-1)
     
-1. [求1+2+3+...+n](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution46.java)
+1. [求1+2+3+...+n](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution46.java)
 
     求1+2+3+...+n，要求不能使用乘除法、for、while、if、else、switch、case等关键字及条件判断语句（A?B:C）。
 
-1. [不用加减乘除做加法](https://github.com/scyking/subject/blob/master/src/jzoffer/Solution47.java)
+1. [不用加减乘除做加法](https://github.com/scyking/subject/blob/master/src/main/java/jzoffer/Solution47.java)
 
     写一个函数，求两个整数之和，要求在函数体内不得使用+、-、*、/四则运算符号。
     
