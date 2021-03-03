@@ -1,22 +1,23 @@
 package jzoffer;
 
+import algorithms.Fibonacci;
+
+import java.lang.reflect.Proxy;
+
 /**
  * 斐波那契数列
  * <p>
- *         大家都知道斐波那契数列，现在要求输入一个整数n，请你输出斐波那契数列的第n项（从0开始，第0项为0）。
- *         n<=39
+ * 要求输入一个整数n，请你输出斐波那契数列的第n项（从0开始，第0项为0）。
+ * n<=39
  * </p>
+ *
+ * @see Fibonacci
  */
-public class Solution06 {
+public class Solution06 implements Solution {
 
     // 方法一：使用递归计算（耗时久）
     public int fibonacci1(int n) {
-        if (n < 1) {
-            return 0;
-        } else if (n == 1) {
-            return 1;
-        }
-        return fibonacci1(n - 1) + fibonacci1(n - 2);
+        return Fibonacci.recursion(n);
     }
 
     // 方法2：使用循环计算
@@ -24,7 +25,8 @@ public class Solution06 {
         int[] array = {1, 1, 2};
         if (n < 1) {
             return 0;
-        } else if (n <= 3) {
+        }
+        if (n <= 3) {
             return array[n - 1];
         }
         int flag = 0;
@@ -38,17 +40,21 @@ public class Solution06 {
 
     // 方法3：对方法2进行优化
     public int fibonacci3(int n) {
-        if (n < 1) {
-            return 0;
-        }
-        int[] array = {1, 1};
-        int flag = 0;
-        while (n > 2) {
-            array[flag % 2] = array[0] + array[1];
-            flag++;
-            n--;
-        }
-        return array[(flag + 1) % 2];
+        return Fibonacci.loop(n);
     }
 
+    @Override
+    public Object execute() {
+        return fibonacci3(20);
+    }
+
+    public static void main(String[] args) {
+        Solution solution = new Solution06();
+        Solution solutionProxy = (Solution) Proxy.newProxyInstance(
+                solution.getClass().getClassLoader(),
+                solution.getClass().getInterfaces(),
+                new SolutionProxy(solution)
+        );
+        solutionProxy.execute();
+    }
 }
