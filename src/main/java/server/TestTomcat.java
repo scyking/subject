@@ -8,19 +8,45 @@ import org.apache.catalina.startup.Tomcat;
 import java.io.File;
 
 /**
+ * <p>tomcat server组成:</p>
+ * <ul>
+ * <li>service1</li>
+ * <li>service2</li>
+ * <li>service3</li>
+ * <li>...</li>
+ * </ul>
+ *
+ * <p>service组成:</p>
+ * <ul>
+ * <li>container</li>
+ * <li>connector1</li>
+ * <li>connector2</li>
+ * <li>connector3</li>
+ * <li>...</li>
+ * </ul>
+ *
+ * <p>container 组成:</p>
+ * <ul>
+ * <li>Engine</li>
+ * <li>Host</li>
+ * <li>Context</li>
+ * <li>Wrapper</li>
+ * </ul>
+ *
  * @author scyking
  **/
 public class TestTomcat {
 
     /**
-     * http://127.0.0.1:8090/context/test
+     * 测试地址：http://127.0.0.1:8090/context/test
      */
-    public static void startTest(){
+    public static void startTest() {
         System.setProperty("catalina.base", System.getProperty("user.dir"));
         System.out.println("start TestTomcat");
         // 创建连接器
         Connector connector = new Connector("HTTP/1.1");
         connector.setPort(8090);
+
         // 创建上下文容器
         Context context = new StandardContext();
         context.setPath("/context");
@@ -71,8 +97,7 @@ public class TestTomcat {
                 ((Lifecycle) server).start();
                 //挂起服务
                 server.await();
-            }
-            catch (LifecycleException e) {
+            } catch (LifecycleException e) {
                 e.printStackTrace(System.out);
             }
         }
@@ -81,8 +106,7 @@ public class TestTomcat {
         if (server instanceof Lifecycle) {
             try {
                 ((Lifecycle) server).stop();
-            }
-            catch (LifecycleException e) {
+            } catch (LifecycleException e) {
                 e.printStackTrace(System.out);
             }
         }
